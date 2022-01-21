@@ -4,11 +4,14 @@ namespace App\Http\Controllers;
 
 class ContohController extends Controller
 {
-    protected $property;
 
-    public function __construct($property)
+    public function __construct()
     {
-        $this->property = $property;
+    }
+
+
+    public function test(){
+        return view('bills.bills');
     }
 
     
